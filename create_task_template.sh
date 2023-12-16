@@ -1,12 +1,13 @@
 #!/bin/bash
 
-while getopts t:N:n:l: flag  
+while getopts t:N:n:l:u: flag  
 do
   case "${flag}" in
     t) type=${OPTARG};;
     N) number=${OPTARG};;
     n) name=${OPTARG};;
     l) language=${OPTARG};;
+    u) url=${OPTARG};;
   esac
 done
 
@@ -35,6 +36,7 @@ else
 fi
 
 mkdir -p "${directory}/${number}${name}"
-cp "template.md" "${directory}/${number}${name}"
-mv "${directory}/${number}${name}/template.md" "${directory}/${number}${name}/${number}${name}Solution.md"
+sed "s/ProblemName.ProblemNumber/${name}/" "template.md" > "${directory}/${number}${name}/temp.md"
+sed -i "s/problemName/${url}/" "${directory}/${number}${name}/temp.md"
+mv "${directory}/${number}${name}/temp.md" "${directory}/${number}${name}/${number}${name}Solution.md"
 touch "${directory}/${number}${name}/${number}${name}.${filetype}"
