@@ -36,7 +36,7 @@ else
 fi
 
 mkdir -p "${directory}/${number}${name}"
-sed "s/ProblemName.ProblemNumber/${ProblemNumber}.${name}/" "template.md" > "${directory}/${number}${name}/temp.md"
+sed "s/ProblemName.ProblemNumber/${number}.${name}/" "template.md" > "${directory}/${number}${name}/temp.md"
 sed -i "s/problemName/${url}/" "${directory}/${number}${name}/temp.md"
 mv "${directory}/${number}${name}/temp.md" "${directory}/${number}${name}/${number}${name}Solution.md"
 touch "${directory}/${number}${name}/${number}${name}.${filetype}"
