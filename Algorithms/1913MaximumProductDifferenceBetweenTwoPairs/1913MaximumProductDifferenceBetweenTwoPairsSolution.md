@@ -69,6 +69,7 @@ The product difference is (9 * 8) - (2 * 4) = 64.
 <p>&nbsp;</p>
 
 <h2>Solution Intuition</h2>
+
 First of all we need to see that all numbers are positive, so there are will no be a dificulty that negative number * negative number equals to positive number.
 After that we can say that we need to find ```minimal number``` and ```second minimal numbers```,
 same for ```maximal``` and ```second maximal number```. After that our result will be ```maximal_number * second_maximal_number - minimal_number * second_minimal_number```.
