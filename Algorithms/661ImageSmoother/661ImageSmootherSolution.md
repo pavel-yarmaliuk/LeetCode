@@ -25,7 +25,7 @@
 <h2><a href="https://leetcode.com/problems/image-smoother">661.ImageSmoother</a><h2>
 
 <ul>
-<li><p>Problem Difficulty: $\color[RGB]{0 184 163}{\textrm{Easy}}$</p></li>
+<li><p>Problem Difficulty: $\color[RGB]{0, 184, 163}{\textrm{Easy}}$</p></li>
 <li><p>Status: $\color[RGB]{44, 187, 93}{\textrm{Accepted}}$</strong></p>
 </ul>
 
