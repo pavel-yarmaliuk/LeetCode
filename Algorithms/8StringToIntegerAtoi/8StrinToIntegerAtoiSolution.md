@@ -107,6 +107,7 @@ Since 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final resu
 </div>
 <p>&nbsp;</p>
 <h2>Solution Intuition</h2>
+
 For solve this problem firstly we need to find left and right border. To find left border we need to remove all whitespaces from the string and then 
 understand is our number positive or negative (be careful with case when before number input have "-" and "+" like "+-+111") we can do it after finding right border.
 Right border we will find from lazy detected left border ```if string[0] == "-" or string[0] == "+"``` then we start from 1 index else we will start from 0 index.
