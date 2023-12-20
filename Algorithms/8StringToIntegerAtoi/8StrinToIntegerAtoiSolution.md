@@ -109,10 +109,10 @@ Since 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final resu
 <h2>Solution Intuition</h2>
 
 For solve this problem firstly we need to find left and right border. To find left border we need to remove all whitespaces from the string and then 
-understand is our number positive or negative (be careful with case when before number input have "-" and "+" like "+-+111") we can do it after finding right border.
-Right border we will find from lazy detected left border ```if string[0] == "-" or string[0] == "+"``` then we start from 1 index else we will start from 0 index.
+understand is our number positive or negative (be careful with case when before number input have "-" and "+" like "+-+111").
+Right border we will find from left border ```if string[0] == "-" or string[0] == "+"``` then we start from 1 index else we will start from 0 index.
 This will continue until ```r < len(s) or string[r].isdigit()``` it means that or we will finish at the end of the string or our current ```s[r]``` will not be a number.
-After we founded right border we should finally identify left border by checking first character. Then we should check that value between left and right border is number.
+Then we should check that value between left and right border is number.
 If not return 0 else check that we are not outgoing from Constraints and return result.
 
 
@@ -125,22 +125,16 @@ class Solution:
         s = s.lstrip()
         if not s:
             return 0
-        r = s[0] == "-" or s[0] == "+"
-        while r < len(s) and s[r].isdigit():
-            r += 1
-        positiviness = False
-        if len(s[:r]) > 1 and (s[0] == "-" or s[0] == "+"):
-            positiviness = True
-        if s[positiviness:r].isdigit():
-            res = int(s[positiviness:r])
-            res = res * (-1) if s[0] == '-' else res
-            if res <= 2147483648 - 1 and res >= -2147483648:
-                return res
-            if res > 2147483648 - 1:
-                return 2147483648 - 1
-            else:
-                return -2147483648
-        else:
-            return 0
+        is_positive = s[0] == "+"
+        is_negative = s[0] == "-"
+        iterator = is_negative or is_positive
+        result = 0
+        while iterator < len(s) and s[iterator].isdigit():
+            result = result * 10 + int(s[iterator])
+            iterator += 1
+        result *= -1 if is_negative else 1
+        result = 2147483647 if result > 2147483647 else result
+        result = -2147483648 if result < -2147483648 else result
+        return result
 ```
 
