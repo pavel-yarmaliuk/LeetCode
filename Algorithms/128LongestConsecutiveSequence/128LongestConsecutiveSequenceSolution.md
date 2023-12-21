@@ -63,7 +63,7 @@
 Let's create a union find structure with ranks based on count of nodes of particular tree. Then we will go through set of ```nums``` and check if
 ```current_num - 1``` in UnionFind. If yes, then we should ```union``` ```current_num``` and ```current_num - 1``` in one set and update ranks.
 After going through all set we will have fully build UnionFind structure. If we will go thourgh all ranks and find maximum rank, we will find answer for the task.
-Code complexity will be O(N*log <code><sup> * </sup> </code> (N)) which is super near to O(N). Space complexity will be O(2*N).
+Code complexity will be <code>O(N*log<sup> * </sup>(N))</code> which is super near to O(N). Space complexity will be O(2*N).
 
 <p>&nbsp;</p>
 <h2>Solution Code</h2>
