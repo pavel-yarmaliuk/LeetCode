@@ -75,4 +75,4 @@
 ```
 
 <p>&nbsp;</p>
-<h2>Solution Pircture</h2>
+<h2>Solution Picture</h2>
