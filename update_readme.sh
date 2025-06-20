@@ -26,10 +26,10 @@ else
     exit 1
 fi
 
-solution_image_path="${directory}/images/screenshot.png"
+solution_image_path="${directory}/${number}${name}/images/screenshot.png"
 
 
 echo "
 
-## ${source_badge} ![${language}]${badge} [${number}.${name}](${directory}/README.md) 
+## ${source_badge} ![${language}]${badge} [${number}.${name}](${directory}/${number}${name}/README.md) 
 ![Solution image ${number}](${solution_image_path})" >> "README.md"
