@@ -20,3 +20,7 @@
 
 ## [217.Contains Duplicate](Algorithms/Leetcode/README.md) Solution language (https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) python
 ![Solution image 217](Algorithms/Leetcode/images/screenshot.png)
+
+
+## [217.ContainsDuplicate](Algorithms/Leetcode/README.md) Solution language ![python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+![Solution image 217](Algorithms/Leetcode/images/screenshot.png)
