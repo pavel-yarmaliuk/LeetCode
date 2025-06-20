@@ -11,11 +11,10 @@ do
   esac
 done
 
-language_with_badge="${badge} ${language}"
 solution_image_path="${directory}/images/screenshot.png"
 
 
 echo "
 
-## [${number}.${name}](${directory}/README.md) Solution language ${language_with_badge}
+## [${number}.${name}](${directory}/README.md) Solution language ![${language}]${badge} 
 ![Solution image ${number}](${solution_image_path})" >> "README.md"
