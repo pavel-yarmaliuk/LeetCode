@@ -70,4 +70,4 @@ echo $badge
 echo $directory
 echo $language
 
-./update_readme.sh -N "${number}" -n "${name}" -l "${language}" -b "${badge}" -d "${directory}"
+./update_readme.sh -N "${number}" -n "${name}" -l "${language}" -b "${badge}" -d "${directory}" -s "${src}"
