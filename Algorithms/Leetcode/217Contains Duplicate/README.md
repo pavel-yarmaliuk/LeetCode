@@ -22,7 +22,7 @@
 
 </style> -->
 
-<h2><a href=problemUrl>ProblemName.ProblemNumber</a><h2>
+<h2><a href=https://leetcode.com/problems/contains-duplicate/description/>217.Contains Duplicate</a><h2>
 
 <ul>
 <li><p>Problem Difficulty: $\color[RGB]{255,192, 30}{\textrm{Medium}}$</p></li>
