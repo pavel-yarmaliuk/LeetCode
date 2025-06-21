@@ -76,3 +76,4 @@
 
 <p>&nbsp;</p>
 <h2>Solution Picture</h2>
+<img src="images/screenshot.png" alt="solution">
